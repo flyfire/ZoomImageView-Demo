@@ -22,7 +22,7 @@ public class ImageActivity extends AppCompatActivity {
 
         List<Bitmap> drawables = new ArrayList<>();
         BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inSampleSize = 2;//图片较大，压缩画质
+        options.inSampleSize = 4;//图片较大，压缩画质
         drawables.add(BitmapFactory.decodeResource(getResources(), R.drawable.tongyeong, options));
         drawables.add(BitmapFactory.decodeResource(getResources(), R.drawable.brighton, options));
         drawables.add(BitmapFactory.decodeResource(getResources(), R.drawable.czech, options));
